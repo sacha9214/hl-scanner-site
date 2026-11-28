@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr" data-static="1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scanner HL · terminal</title>
+  <link rel="stylesheet" href="et/css/app.css">
+  <link rel="stylesheet" href="static/css/hl.css">
+  <script type="module" src="static/js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark" aria-hidden="true">■</span>SCANNER HL<span class="tag">HYPERLIQUID · CLÔTURES 1H · LECTURE SEULE · PAPIER</span></div>
+    <div class="status" id="status" aria-live="polite"></div>
+    <span class="clock" id="clock" aria-label="Heure UTC"></span>
+    <button class="icon-btn" id="theme" type="button" aria-label="Basculer écran / papier">◐</button>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <a href="#scanner"><kbd>F1</kbd>SCANNER</a>
+    <a href="#journal"><kbd>F2</kbd>JOURNAL</a>
+    <a href="#backtest"><kbd>F3</kbd>BACKTEST</a>
+    <a href="#regles"><kbd>F4</kbd>RÈGLES</a>
+    <a href="#paper"><kbd>F5</kbd>PAPER</a>
+  </nav>
+  <main id="view"><p class="loading">CHARGEMENT…</p></main>
+  <footer class="foot">LECTURE SEULE — AUCUNE CLÉ API, AUCUN ORDRE, JOURNAL PAPIER UNIQUEMENT. Tous les chiffres viennent des prix passés,
+    du funding et des carnets d'ordres ; rien ici ne prédit l'avenir. Pas un conseil en investissement.</footer>
+</body>
+</html>
